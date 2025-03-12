@@ -2,21 +2,328 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- For Responsive Purpose -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Ash Shiddieqy</title>
-
-    <!-- CSS -->
+    <title>Springfield Academy</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
-    <!-- Header -->
-    <header></header>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <!-- Logo -->
+      <nav>
+        <div class="navbar-logo">
+          <img src="assets/school-solid-240.png" alt="Springfield Academy" />
+        </div>
 
-    <!-- Content -->
-    <main></main>
+        <!-- Menu -->
+        <div class="navbar-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#achievement">Achievement</a>
+          <a href="#message">Message Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Home -->
+      <section id="home">
+        <div class="content-header">
+          <h1>
+            Hi <span id="home-nama">User</span>, Welcome to Springfield Academy
+          </h1>
+          <p>
+            Springfield Academy is a premier educational institution committed
+            to excellence in academics, character building, and holistic
+            development. Our state-of-the-art campus provides a conducive
+            learning environment that fosters innovation and critical thinking
+          </p>
+        </div>
+
+        <div class="home-slide">
+          <div class="home-slide-photo">
+            <img
+              src="assets/dogancan-ozturan-EuYXlTTMB0c-unsplash.jpg"
+              alt="home-slide"
+            />
+          </div>
+          <div class="home-slide-photo">
+            <img
+              src="assets/asia-culturecenter-fGLuk0h0EsY-unsplash.jpg"
+              alt="home-slide"
+            />
+          </div>
+          <div class="home-slide-photo">
+            <img
+              src="assets/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg"
+              alt="home-slide"
+            />
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- About Us -->
+      <section id="about">
+        <div class="content-header">
+          <h1>About Us</h1>
+          <p>
+            At Springfield Academy, we warmly welcome every student into a
+            nurturing environment where our vision inspires lifelong learning,
+            and our mission guides them through a values-driven
+            education—empowering them with knowledge, character, and skills for
+            a bright and successful future
+          </p>
+        </div>
+
+        <div class="about-vision-mission">
+          <div class="about-vision">
+            <h1>Vision</h1>
+            <p>
+              To nurture lifelong learners and responsible global citizens
+              through quality education and values-driven leadership.
+            </p>
+          </div>
+
+          <div class="about-mission">
+            <h1>Mission</h1>
+            <ul>
+              <li>
+                To provide high-quality education that fosters creativity and
+                critical thinking.
+              </li>
+              <li>
+                To cultivate a culture of respect, inclusivity, and leadership.
+              </li>
+              <li>
+                To equip students with skills and knowledge for future success.
+              </li>
+              <li>
+                To engage with the community through social responsibility
+                initiatives.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Achievement -->
+      <section id="achievement">
+        <div class="content-header">
+          <h1>Achievement</h1>
+          <p>
+            Springfield Academy has earned prestigious recognition for its
+            outstanding academic performance, leadership in STEM education, and
+            dedication to holistic student development. The school has
+            consistently excelled in national competitions, fostered innovation
+            through robotics and science programs, and made a meaningful impact
+            through extensive community service initiatives
+          </p>
+        </div>
+
+        <div class="achievement-container">
+          <div class="achievement-container-content">
+            <img
+              src="assets/akson-1K8pIbIrhkQ-unsplash.jpg"
+              alt="achievement"
+            />
+            <h1>Best School Award by National Education Board in 2023</h1>
+            <p>
+              Recognized as one of the top institutions in the country for
+              excellence in academics, extracurricular activities, and overall
+              student development.
+            </p>
+          </div>
+          <div class="achievement-container-content">
+            <img
+              src="assets/150-billi-KAajoqY90Cg-unsplash.jpg"
+              alt="achievement"
+            />
+            <h1>Top 10 Science Olympiad Winner in 2022 and 2023</h1>
+            <p>
+              Earned a spot in the top 10 at a prestigious national-level
+              Science Olympiad, where students showcased their problem-solving
+              and scientific knowledge.
+            </p>
+          </div>
+          <div class="achievement-container-content">
+            <img
+              src="assets/jeswin-thomas-q2BpMaqzDNQ-unsplash.jpg"
+              alt="achievement"
+            />
+            <h1>State Champion in Robotics Competition in 2021</h1>
+            <p>
+              Our school's robotics team won first place in a state-wide
+              competition by designing, building, and programming a
+              high-performing robot to complete specific challenges.
+            </p>
+          </div>
+          <div class="achievement-container-content">
+            <img
+              src="assets/tribesh-kayastha-zgdhwK1UT3U-unsplash.jpg"
+              alt="achievement"
+            />
+            <h1>Excellence in Community Service Award in 2020</h1>
+            <p>
+              Acknowledged for outstanding contributions to the community
+              through various initiatives, including volunteer programs, charity
+              events, and social impact projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Message Us -->
+      <section id="message">
+        <div class="content-header">
+          <h1>Message Us</h1>
+          <p>We'd Love to Hear from You! Get in Touch with Us Today!</p>
+        </div>
+
+        <!-- Form Viewer -->
+        <div class="form-and-ouput">
+          <div>
+            <form class="form">
+              <div class="form-label">
+                <label for="nama" id="label-nama">Name</label>
+                <label class="form-label-colon">:</label>
+                <input type="text" id="input-nama" placeholder="Name" />
+              </div>
+
+              <div class="form-label">
+                <label for="tgl-lahir" id="label-tgl-lahir">Date of Birth</label
+                ><label class="form-label-colon">:</label>
+                <input type="date" id="input-tgl-lahir" />
+              </div>
+
+              <div class="form-label">
+                <label for="jns-kelamin" id="label-jns-kelamin">Gender</label
+                ><label class="form-label-colon">:</label>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    id="laki-laki"
+                    name="jenis-kelamin"
+                    value="Laki-laki"
+                    class="input-radio"
+                  />
+                  <label for="laki-laki" class="label-radio">Male</label>
+
+                  <input
+                    type="radio"
+                    id="perempuan"
+                    name="jenis-kelamin"
+                    value="Perempuan"
+                    class="input-radio"
+                  />
+                </div>
+
+                <label for="perempuan" class="label-radio">Female</label>
+              </div>
+
+              <div class="form-label">
+                <label for="pesan" id="label-pesan">Message</label>
+                <label class="form-label-pesan">:</label>
+                <textarea
+                  name="pesan"
+                  id="textarea-pesan"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </form>
+
+            <button type="button" class="button-submit" onclick="displayData()">
+              Submit
+            </button>
+          </div>
+
+          <!-- Output Javascript -->
+          <div id="output" class="output-box">
+            <div class="output-waktu-sekarang">
+              <label id="output-label">Current Time</label
+              ><label id="output-colon">:</label>
+              <span id="currentTime"></span>
+            </div>
+            <div class="output-container">
+              <label id="output-label">Name</label>
+              <label id="output-colon">:</label>
+              <span id="outputLabelNama"></span>
+            </div>
+
+            <div class="output-container">
+              <label id="output-label">Date of Birth</label>
+              <label id="output-colon">:</label>
+              <span id="outputLabelTglLahir"></span>
+            </div>
+
+            <div class="output-container">
+              <label id="output-label">Gender</label>
+              <label id="output-colon">:</label>
+              <span id="outputLabelJnsKelamin"></span>
+            </div>
+
+            <div class="output-container">
+              <label id="output-label">Message</label>
+              <label id="output-colon">:</label>
+              <span id="outputLabelPesan"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <div class="footer-school">
+        <div class="footer-school-logo">
+          <i class="bx bxs-school"></i>
+          <h1>Springfield Academy</h1>
+        </div>
+        <div class="footer-school-detail">
+          <i class="bx bx-map-alt"></i>
+          <h5>123 Education Street, Springfield, USA</h5>
+        </div>
+        <div class="footer-school-detail">
+          <i class="bx bxs-phone"></i>
+          <h5>+1 (123) 456-7890</h5>
+        </div>
+        <div class="footer-school-detail">
+          <i class="bx bx-envelope"></i>
+          <h5>info@springfieldacademy.com</h5>
+        </div>
+        <div class="footer-school-detail">
+          <i class="bx bx-globe"></i>
+          <h5>www.springfieldacademy.com</h5>
+        </div>
+      </div>
+
+      <div class="footer-school-menu">
+        <h1>Menu</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#achievement">Achievement</a>
+        <a href="#message">Message Us</a>
+      </div>
+
+      <div class="footer-watermark">
+        <h1>Created by</h1>
+        <h2>Ash Shiddieqy</h2>
+      </div>
+    </footer>
   </body>
 </html>
