@@ -1,11 +1,10 @@
 // Script JS
 
 // Hi, User!
-let name = prompt("Halo, siapakah nama Anda?", "") || "Guest";
+let name = prompt("Hello! What's your name?", "") || "Guest";
 document.getElementById("home-nama").innerHTML = name;
 
-// Home
-// Slide
+// Home Slide
 var slideIndex = 0;
 showDivs();
 
